@@ -242,7 +242,8 @@ h6,
 /*** Facts & Quote ***/
 .facts,
 .quote {
-    background: rgba(15, 66, 41, .6);
+    /*background: rgba(15, 66, 41, .6);*/
+    background: rgb(15 29 66 / 60%);
 }
 
 
@@ -284,7 +285,7 @@ h6,
 }
 
 .service-item:hover .service-text {
-    background: rgba(15, 66, 41, .6);
+    background: rgb(15 29 66 / 60%);
 }
 
 .service-item .service-text h4,
@@ -316,8 +317,8 @@ h6,
     height: 31px;
     display: inline-flex;
     align-items: center;
-    color: var(--dark);
-    background: var(--light);
+    color: white;
+    background: rgb(15 29 66 / 60%);
     white-space: nowrap;
     overflow: hidden;
     transition: .3s;
@@ -331,7 +332,7 @@ h6,
 /*** Project Portfolio ***/
 #portfolio-flters {
     display: inline-block;
-    background: var(--light);
+    background: rgb(15 29 66 / 60%);
     padding: 10px 15px;
 }
 
@@ -363,7 +364,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(15, 66, 41, .6);
+    background: rgb(15 29 66 / 60%);
     transition: .5s;
 }
 
