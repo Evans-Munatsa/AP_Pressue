@@ -61,16 +61,16 @@ h6,
 
 /*** Button ***/
 .top-bar {
-    background-color: #00062a !important;
+    background-color: #2596be !important;
 }
 
 .footer {
-    background-color: #00062a !important;
+    background-color: #2596be !important;
 }
 .btn {
     transition: .5s;
     font-weight: 500;
-    background: #00062a;
+    background: #2596be;
     /*border-color: #2dddfa;*/
 }
 
