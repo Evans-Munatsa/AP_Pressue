@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Splash Screen</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #splash-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+        .drop {
+            width: 20px;
+            height: 20px;
+            background-color: lightblue;
+            border-radius: 50%;
+            animation: drop 1s ease-out forwards;
+            position: absolute;
+        }
+        @keyframes drop {
+            0% { transform: translateY(-100px); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(500px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div id="splash-screen">
+        <div class="drop" style="left: 50px; animation-delay: 0s;"></div>
+        <div class="drop" style="left: 100px; animation-delay: 0.5s;"></div>
+        <div class="drop" style="left: 150px; animation-delay: 1s;"></div>
+        <div class="drop" style="left: 200px; animation-delay: 1.5s;"></div>
+        <div class="drop" style="left: 250px; animation-delay: 2s;"></div>
+    </div>
+    
+    <div id="content" style="display:none;">
+        <!-- Main content goes here -->
+        <h1>Welcome to the website!</h1>
+    </div>
+
+    <script>
+        let dropCount = 0;
+        const drops = document.querySelectorAll('.drop');
+        
+        drops.forEach(drop => {
+            drop.addEventListener('animationend', () => {
+                dropCount++;
+                if (dropCount === 5) {
+                    document.getElementById('splash-screen').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
