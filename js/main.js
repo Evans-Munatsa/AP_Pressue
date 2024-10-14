@@ -75,7 +75,7 @@
     });
 
 
-          // Header carousel
+    // Header carousel
     $(".header-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
