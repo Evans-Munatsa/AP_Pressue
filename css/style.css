@@ -29,7 +29,7 @@ h4,
 .h4,
 .fw-medium {
     font-weight: 600 !important;
-    color: #00062a !important;
+    color: #00062a ;
 }
 
 h5,
@@ -375,11 +375,11 @@ h6,
     right: 0;
 }
 
-.portfolio-inner:hover::before,
+/*.portfolio-inner:hover::before,
 .portfolio-inner:hover::after {
     width: 50%;
 }
-
+*/
 .portfolio-inner .portfolio-text {
     position: absolute;
     width: 100%;
@@ -395,21 +395,21 @@ h6,
     opacity: 0;
 }
 
-.portfolio-inner:hover .portfolio-text {
+/*.portfolio-inner:hover .portfolio-text {
     transition-delay: .3s;
     opacity: 1;
-}
+}*/
 
 .portfolio-inner .portfolio-text .btn {
     background: var(--light);
     color: var(--primary);
 }
 
-.portfolio-inner .portfolio-text .btn:hover {
+/*.portfolio-inner .portfolio-text .btn:hover {
     background: var(--primary);
     color: var(--light);
 }
-
+*/
 
 /*** Team ***/
 .team-item {
