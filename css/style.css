@@ -63,7 +63,8 @@ h6,
 .top-bar {
 /*    background-color: #2596be !important;*/
 /*    background: linear-gradient(rgba(15, 66, 41, .6), rgba(15, 66, 41, .6)), url(../img/waves-task-bar.png) center center no-repeat;*/
-    background: url(../img/waves.png) center bottom no-repeat
+    background: url(../img/waves.png) center bottom no-repeat;
+    background-size: cover;
 }
 
 .footer {
